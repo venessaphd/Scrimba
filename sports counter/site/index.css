@@ -1,0 +1,85 @@
+:root {
+    --green: #7CB442;
+    --grey: #B7B7B7;
+    --lightblue: #9AABD8;
+    --gradient: linear-gradient(0deg, #282E41, #282E41),
+linear-gradient(144.24deg, rgba(138, 138, 138, 0.2) 20.94%, rgba(8, 0, 1, 0.2) 94.45%);
+    --dark: #080001;
+}
+
+@font-face {
+    font-family: "Cursed";   
+    src: url("CursedTimerUlil-Aznm.ttf");
+    
+}
+
+body {
+    margin: 0;
+    color: var(--grey);
+    background: var(--dark) url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 575px;
+    height: 385px;
+    border-radius: 9px;
+    background: var(--gradient);
+    margin: 120px auto 0px auto;
+    
+}
+
+.cursed-font{
+    font-family: "Cursed"
+}
+h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+#score-home-el, #score-guest-el {
+    background:var(--dark);
+    width: 155px;
+    height: 120px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: var(--green);
+    
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+button {
+    font-family: "Cursed";
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    background: none;
+    color: var(--lightblue);
+    width: 45px;
+    padding: 10px 5px;    
+    cursor: pointer
+}
+
+.button-newgame {
+    width: fit-content;
+    /* float: center; */
+    margin: 10px 30px;
+
+}
+
+.celebrate{
+    margin-top: 20px;
+    width: 160px
+}
